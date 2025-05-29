@@ -1,0 +1,25 @@
+.img-bike-pequena{
+    max-width: 400px;
+    height: 520px;
+    object-fit: cover;
+}
+
+.bikes{
+    max-width: 1200px;
+    height: 720px;
+    border: 2px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.img-bikes{
+    display: flex;
+    gap: 40px;
+    place-content: center;
+}
+
+/* .quadrado-bikes{
+    flex-direction: column;
+    align-items: center;
+} */

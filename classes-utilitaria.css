@@ -1,0 +1,37 @@
+.h1-branco{
+    color: var(--w);
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.h1-branco span{
+    color: var(--p1);
+}
+
+.h1-preto{
+    color: var(--c11);
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.h1-preto span{
+    color: var(--p1);
+}
+
+.texto-alternativo-cinza{
+    color: var(--c5);
+    width: 400px;
+    font-size: 1.5rem;
+}
+
+.subtitulo-preto{
+    color: var(--c11);
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.texto-pequeno-preto{
+    color: var(--c11);
+    font-size: 2rem;
+    font-weight: 800;
+}

@@ -1,4 +1,6 @@
 @import url(./utilitario.css);
+@import url(./classes-utilitaria.css);
+@import url(./content-bikes.css);
 
 *{
     margin: 0;
@@ -67,17 +69,7 @@ a{
     align-items: first baseline;
 }
 
-h1{
-    color: var(--w);
-    font-size: 4rem;
-    line-height: 1.2;
-}
 
-p{
-    color: var(--c5);
-    width: 400px;
-    font-size: 1.5rem;
-}
 
 .img-intro{
     max-width: 640px;
@@ -99,14 +91,7 @@ p{
     left: -200px;
 }
 
-@media (max-width: 1105px){
-    .img-intro{
-        max-width: auto;
-        height: auto;
-    }
-}
-
-@media (max-width: 1100px){
+@media (max-width: 1200px){
     .img-intro{
         display: none;
     }
@@ -123,7 +108,7 @@ p{
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 600px){
     .header{
         flex-direction: column;
     }
@@ -135,5 +120,17 @@ p{
 
     .-bg{
         background-color: black;
+    }
+}
+
+@media (max-width: 460px){
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 0.825rem;
+        width: 100%;
+        word-break: break-word;
     }
 }
