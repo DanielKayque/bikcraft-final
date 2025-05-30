@@ -52,3 +52,8 @@
     font-weight: 800;
     text-decoration: underline 4px;
 }
+
+.texto-pequeno-branco{
+    color: var(--w);
+    font-size: 1.5rem;
+}
