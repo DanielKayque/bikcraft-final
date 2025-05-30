@@ -35,3 +35,20 @@
     font-size: 2rem;
     font-weight: 800;
 }
+
+.texto-pequeno-preto span{
+    color: var(--p1);
+}
+
+.texto-alternativo-cinza-small{
+    color: var(--c5);
+    width: 400px;
+    font-size: 1.125rem;
+}
+
+.texto-amarelo-bold{
+    color: var(--p1);
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: underline 4px;
+}
