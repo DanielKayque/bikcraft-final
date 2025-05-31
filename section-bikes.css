@@ -21,6 +21,28 @@
     place-content: center;
 }
 
+@media (max-width: 1290px){
+    .img-bikes{
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        /* padding: 0 20px; */
+        gap: 0px;
+        place-content: unset;
+    }
+
+    .bikes{
+        margin-top: 0px;
+    }
+
+    .quadrado-bikes{
+        margin-right: 30px;
+    }
+
+    .img-bike-pequena{
+        border-radius: 8px;
+    }
+}
+
 
 
 /* @media (max-width: 1880px){
