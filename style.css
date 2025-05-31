@@ -1,7 +1,7 @@
 @import url(./utilitario.css);
 @import url(./classes-utilitaria.css);
 @import url(./section-bikes.css);
-/* @import url(./section-info.css); */
+@import url(./section-info.css);
 
 *{
     margin: 0;
@@ -70,8 +70,6 @@ a{
     align-items: first baseline;
 }
 
-
-
 .img-intro{
     max-width: 640px;
     height: 800px;
@@ -125,13 +123,12 @@ a{
 }
 
 @media (max-width: 460px){
-    h1{
+    .h1-branco{
         font-size: 2rem;
     }
 
-    p{
-        font-size: 0.825rem;
-        width: 100%;
-        word-break: break-word;
+    .texto-alternativo-cinza{
+        font-size: 1rem;
+        width: auto;
     }
 }
