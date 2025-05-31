@@ -90,45 +90,21 @@ a{
     left: -200px;
 }
 
-@media (max-width: 1200px){
-    .img-intro{
-        display: none;
-    }
-
-    .content-main{
-        grid-template-columns: 1fr;
-        max-width: 1200px;
-    }
-
-    .column-left{
-        margin-top: 100px;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px){
-    .header{
-        flex-direction: column;
-    }
-
+@media (max-width: 500px){
     ul{
-        flex-direction: column;
+        flex-wrap: wrap;
         margin-top: 20px;
+        gap: 15px;
     }
 
-    .-bg{
-        background-color: black;
-    }
-}
-
-@media (max-width: 460px){
-    .h1-branco{
-        font-size: 2rem;
+    li{
+        background-color: var(--c11);
+        padding: 10px 20px;
+        border-radius: 4px;
+        gap: 0px;
     }
 
-    .texto-alternativo-cinza{
-        font-size: 1rem;
-        width: auto;
+    .header{
+        flex-wrap: wrap;
     }
 }

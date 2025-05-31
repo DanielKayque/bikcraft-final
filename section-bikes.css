@@ -1,12 +1,13 @@
 .img-bike-pequena{
-    max-width: 400px;
-    height: 520px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 720px;
     object-fit: cover;
 }
 
 .bikes{
     max-width: 1200px;
-    height: 720px;
+    min-height: 720px;
     /* border: 2px solid blue; */
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +21,23 @@
     place-content: center;
 }
 
-@media (max-width: 1299px){
+
+
+/* @media (max-width: 1880px){
+    .img-bike-pequena{
+        max-width: 500px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1580px){
+    .img-bike-pequena{
+        max-width: 450px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1440px){
     .img-bikes{
         flex-direction: column;
         align-items: center;
@@ -31,8 +48,25 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 1210px){
     .bikes{
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
+
+@media (max-width: 400px){
+    .img-bike-pequena{
+        max-width: 300px;
+    }
+
+    .img-bikes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bikes h1{
+        font-size: 3rem;
+    }
+} */
