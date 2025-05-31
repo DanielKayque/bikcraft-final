@@ -57,3 +57,11 @@
     color: var(--w);
     font-size: 1.5rem;
 }
+
+.btn-style{
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, var(--p1), var(--p2));
+    color: var(--c12);
+    border-radius: 4px;
+    border: none;
+}
