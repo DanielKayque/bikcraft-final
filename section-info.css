@@ -4,32 +4,34 @@
     border: 2px solid blue;
     align-items: center;
     width: 100%;
-    height: 1120px;
-    margin-top: 120px;
+    max-height: 1120px;
+    margin-top: -120px;
 }
 
 .info-bg{
     background-color: black;
+    border: 2px solid blueviolet;
     width: 100%;
-    height: 960px;
+    max-height: 960px;
 }
 
 .itens-flex-info{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 1200px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     /* align-items: center; */
 }
 
 .img-tecnologia{
-    width: 700px;
-    height: 1120px;
+    max-width: 100%;
+    height: 1200px;
     object-fit: cover;
     position: relative;
-    top: -40px;
+    top: -100px;
+    border-radius: 4px;
 }
 
 .info-bg p{
@@ -40,8 +42,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 960px;
-    justify-content: center;
+    padding: 40px 0;
+    max-height: 960px;
+    justify-content: flex-start;
 }
 
 .componentes{
@@ -62,4 +65,90 @@
 
 .componentes-tecnologia2::before{
     content: url(./img/icones/rastreador.svg);
+}
+
+@media (max-width: 950px){
+    .column-left-info .h1-branco{
+        max-width: 40ch;
+        font-size: 2.5rem;
+        height: auto;
+    }
+
+    .column-left-info{
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .column-left-info .texto-alternativo-cinza{
+        max-width: 30ch;
+        font-size: 1rem;
+    }
+
+    .texto-amarelo-bold{
+        font-size: 1.4rem;
+    }
+
+    .componentes{
+        grid-template-columns: 1fr;
+    }
+
+    .componentes-tecnologia, .componentes-tecnologia2{
+        max-width: 50ch;
+        font-size: 0.825rem;
+    }
+}
+
+@media (max-width: 620px){
+    .img-tecnologia{
+        display: none;
+    }
+
+    .itens-flex-info{
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .componentes-tecnologia, .componentes-tecnologia2{
+        max-width: 50ch;
+        font-size: 0.620rem;
+    }
+
+    .column-left-info{
+        max-height: 100%;
+    }
+
+    .componentes-tecnologia .texto-pequeno-branco{
+        max-width: 20ch;
+        display: inline-block;
+    }
+
+    .componentes-tecnologia2 .texto-pequeno-branco{
+        max-width: 20ch;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px){
+      .column-left-info .texto-alternativo-cinza{
+        max-width: 30ch;
+        font-size: 0.82rem;
+    }
+
+    .componentes-tecnologia2 span, .componentes-tecnologia span{
+        font-size: 0.821rem;
+    }
+
+    .componentes-tecnologia .texto-pequeno-branco, .componentes-tecnologia2 .texto-pequeno-branco{
+        font-size: 1.2rem;
+        display: block;
+    }
+
+    .componentes{
+        margin-top: 20px;
+    }
+
+    .column-left-info .texto-alternativo-cinza{
+        margin-top: 10px;
+    }
 }

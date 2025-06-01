@@ -3,16 +3,18 @@
     max-width: 600px;
     max-height: 720px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .bikes{
     max-width: 1200px;
-    min-height: 720px;
-    /* border: 2px solid blue; */
+    max-height: 720px;
+    border: 2px solid blue;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
     margin-top: 120px;
+    margin-bottom: 200px;
 }
 
 .img-bikes{
@@ -46,5 +48,11 @@
 @media (max-width: 1210px){
     .bikes{
         margin-top: 0px;
+    }
+}
+
+@media (max-width: 620px){
+    .bikes{
+        margin-bottom: 100px;
     }
 }
