@@ -6,6 +6,7 @@
     margin-right: auto;
     height: 100%;
     margin-bottom: 130px;
+
 }
 
 .content-parcerias{
@@ -19,6 +20,7 @@
 .parcerias{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
 }
 
 li{
