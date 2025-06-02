@@ -67,6 +67,12 @@
     content: url(./img/icones/rastreador.svg);
 }
 
+@media (max-width:1212px){
+    .column-left-info{
+        padding: 40px;
+    }
+}
+
 @media (max-width: 950px){
     .column-left-info .h1-branco{
         max-width: 40ch;
@@ -150,5 +156,11 @@
 
     .column-left-info .texto-alternativo-cinza{
         margin-top: 10px;
+    }
+}
+
+@media (max-width:350px){
+    .column-left-info{
+        padding: 5px;
     }
 }

@@ -21,15 +21,14 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-ul{
+/* ul .parcerias{
     margin-top: 30px;
     position: relative;
     align-items: first baseline;
     /* border: 2px solid violet; */
+/* } */
 
-}
-
-ul::after{
+/* ul::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -37,10 +36,9 @@ ul::after{
     height: 1px;
     right: 30px;
     background: var(--c5);
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center; */
 
 @media (max-width: 900px){
     .parcerias{
