@@ -104,7 +104,7 @@
     }
 }
 
-@media (max-width: 620px){
+@media (max-width: 644px){
     .img-tecnologia{
         display: none;
     }
@@ -159,8 +159,12 @@
     }
 }
 
-@media (max-width:350px){
+@media (max-width:368px){
     .column-left-info{
         padding: 5px;
+    }
+
+    .info-bg{
+        width: 100%;
     }
 }
