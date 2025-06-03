@@ -1,0 +1,119 @@
+.section-seguros{
+    height: 800px;
+    width: 100%;
+    background-color: var(--c11);
+}
+
+.content-seguros{
+    border: 2px solid brown;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    max-width: 1200px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1-seguros{
+    display: flex;
+    border: 2px solid blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 40px 0px;
+    display: block;
+}
+
+.seguros-prata{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    background-color: var(--c12);
+    width: 560px;
+    max-height: 400px;
+    padding: 20px 60px;
+    gap: 10px;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
+
+.seguros-prata h2{
+    color: var(--c6);
+    font-size: 2.25rem;
+}
+
+.seguros-prata p{
+    color: white;
+    /* position: relative; */
+}
+
+.seguros-prata .preco{
+    color: white;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+}
+
+.seguros-prata .preco span{
+    margin-top: -10px;
+}
+
+.seguros-prata .preco p{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.seguros-prata .ouro{
+    color: var(--p1);
+}
+
+.seguros-ouro{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex; */
+    background-color: var(--c12);
+    width: 560px;
+    max-height: 484px;
+    padding: 20px 60px;
+    gap: 10px;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
+
+.seguros-ouro p{
+    color: white;
+}
+
+.seguros-ouro .ouro{
+    color: var(--p1);
+    font-size: 2.25rem;
+}
+
+.seguros-ouro .preco{
+    color: white;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+}
+
+.seguros-ouro .preco span{
+    margin-top: -10px;
+}
+
+.seguros-ouro .preco p{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* .seguros-prata p::before{
+    content: "";
+    background-image: url(./img/icons8-selecionado.svg);
+    width: 50px;
+    height: 50px;
+    background: no-repeat;
+    position: absolute;
+} */
