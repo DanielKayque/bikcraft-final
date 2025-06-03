@@ -1,14 +1,14 @@
-.section-seguros{
+/* .section-seguros{
     height: 800px;
     width: 100%;
     background-color: var(--c11);
+    border: 2px solid aqua;
 }
 
 .content-seguros{
     border: 2px solid brown;
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
     justify-content: space-around;
     max-width: 1200px;
     height: 800px;
@@ -23,13 +23,12 @@
     margin-right: auto;
     max-width: 1200px;
     padding: 40px 0px;
-    display: block;
 }
 
 .seguros-prata{
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
+    align-items: start;
     background-color: var(--c12);
     width: 560px;
     max-height: 400px;
@@ -46,7 +45,6 @@
 
 .seguros-prata p{
     color: white;
-    /* position: relative; */
 }
 
 .seguros-prata .preco{
@@ -73,7 +71,6 @@
 .seguros-ouro{
     display: flex;
     flex-direction: column;
-    /* align-items: flex; */
     background-color: var(--c12);
     width: 560px;
     max-height: 484px;
@@ -107,7 +104,7 @@
 .seguros-ouro .preco p{
     font-size: 2rem;
     font-weight: 800;
-}
+} */
 
 /* .seguros-prata p::before{
     content: "";
@@ -117,3 +114,73 @@
     background: no-repeat;
     position: absolute;
 } */
+
+.section-seguros1{
+    width: 100%;
+    height: 800px;
+    background-color: var(--c11);
+    border: 2px solid blue;
+}
+
+.content-seguros{
+    border: 2px solid brown;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.seguros-prata-ouro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seguros-prata{
+    background-color: black;
+    color: white;
+    padding: 20px 60px;
+    height: 400px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.seguros-prata .preco,
+.seguros-ouro .preco{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 100%;
+    margin-top: -60px;
+
+}
+
+.seguros-prata .preco p, 
+.seguros-ouro .preco p{
+    font-size: 2.25rem;
+    line-height: 0.825;
+    font-weight: 800;
+}
+
+.seguros-prata h2,
+.seguros-ouro h2{
+    color: var(--c6);
+    font-size: 2.25rem;
+}
+
+.seguros-ouro{
+    background-color: black;
+    color: white;
+    padding: 20px 60px;
+    height: 484px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 4px;
+}
