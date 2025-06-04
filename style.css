@@ -5,6 +5,7 @@
 @import url(./section-parcerias.css);
 @import url(./section-motivacional.css);
 @import url(./section-seguros.css);
+@import url(footer.css);
 
 *{
     margin: 0;
