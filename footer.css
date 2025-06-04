@@ -1,5 +1,5 @@
 footer{
-    height: 500px;
+    min-height: 500px;
     width: 100%;
     background-color: black;
 }
@@ -50,4 +50,15 @@ footer a{
     border-top: 2px solid rgba(178, 178, 178, 0.2);
     border-bottom: 2px solid rgba(178, 178, 178, 0.2);
     padding: 10px;
+}
+
+@media (max-width: 644px){
+    .content-footer{
+    flex-direction: column;
+    gap: 40px;
+    }
+    .content-footer .contato  .address{
+    border-top: none;
+    border-bottom: none;
+}
 }
