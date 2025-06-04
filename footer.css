@@ -6,7 +6,7 @@ footer{
 
 .content-footer{
     display: flex;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     height: 100%;
     max-width: 1200px;
     margin-left: auto;
