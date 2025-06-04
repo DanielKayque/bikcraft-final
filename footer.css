@@ -39,6 +39,10 @@ footer a{
     display: flex;
 }
 
+footer a:hover{
+    color: white;
+}
+
 .content-footer .contato,
 .content-footer .informacoes{
     display: flex;
