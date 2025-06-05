@@ -1,9 +1,10 @@
 article{
-    max-height: 240px;
+    /* max-height: 240px; */
     width: 100%;
     background-color: var(--c11);
-    padding: 60px;
+    padding: 60px 0;
     gap: 80px;
+    border: 2px solid blue;
 }
 
 .cta-article{
@@ -17,18 +18,25 @@ article{
     display: flex;
     flex-direction: column;
     background-color: white;
+    border: 2px solid brown;
 }
 
-.article-bike1{
+.article-bike1,
+.article-bike2,
+.article-bike3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-height: 400px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    /* border: 2px solid blueviolet; */
 }
 
-.article-bike1 img{
+.article-bike1 img,
+.article-bike2 img,
+.article-bike3 img{
     width: 540px;
     height: 320px;
     border-radius: 4px;
@@ -54,7 +62,9 @@ article{
 }
 
 
-.article-bike1 p{
+.article-bike1 p,
+.article-bike2 p,
+.article-bike3 p{
     color: var(--c8);
     font-size: 1.125rem
 }
@@ -72,5 +82,61 @@ li{
 
 .section-bike2{
     width: 100%;
-    background-color: black;
+    height: 460px;
+    /* max-width: 1200px; */
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* background-color: black; */
+     background: linear-gradient(to right, white 0% 25%, #111 25% 100%);
+    /* border: 2px solid blue; */
+}
+
+.section-bike2 .article-bike1 h2{
+    font-size: 2.25rem;
+    color: white;
+}
+
+.article-bike2 h2{
+    font-size: 2.25rem;
+    color: white;
+}
+
+.section-bike2 .article-bike1 p{
+    /* font-size: 2.25rem; */
+    color: var(--c7);
+}
+
+.article-bike2 p{
+    /* font-size: 2.25rem; */
+    color: var(--c6);
+}
+
+.article-bike1 h2::before{
+    content: "R$ 4999";
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: var(--c11);
+    position: relative;
+    /* left: 598px;
+    top: 420px; */
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 12px;
+}
+
+.article-bike2 h2::before{
+    content: "R$ 4999";
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: var(--c11);
+    position: relative;
+    /* left: 600px;
+    top: 900px; */
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 12px;
 }

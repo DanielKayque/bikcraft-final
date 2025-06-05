@@ -37,24 +37,6 @@
     font-weight: 800;
 }
 
-/* .texto-pequeno-preto::before{
-content: "";
-display: inline-block;
-position: relative;
-width: 6px;
-height: 6px;
-background-color: var(--p1);
-top: -7px;
-transform-origin: left;
-transform: scaleX(0);
-transition: all 0.3s ease;
-}
-
-.texto-pequeno-preto::before:hover{
-    width: 100%;
-    transform: scaleX(1);
-} */
-
 .texto-pequeno-preto span{
     color: var(--p1);
 }
