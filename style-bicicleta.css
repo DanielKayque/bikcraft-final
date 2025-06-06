@@ -4,7 +4,7 @@ article{
     background-color: var(--c11);
     padding: 60px 0;
     gap: 80px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .cta-article{
@@ -18,7 +18,7 @@ article{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .article-bike1,
@@ -30,7 +30,6 @@ article{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     /* border: 2px solid blueviolet; */
 }
 
@@ -43,12 +42,13 @@ article{
     object-fit: cover;
 }
 
-.text-bike1{
+/* .text-bike1{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    align-items: start;
-}
+    align-items: left;
+    text-align: left;
+} */
 
 .item-bike1{
     display: flex;
@@ -57,8 +57,12 @@ article{
     margin-top: 20px;
 }
 
-.article-bike1 h2{
+.article-bike1 h2,
+.article-bike3 h2{
     font-size: 2.25rem;
+    text-align: left;
+    /* border: 2px solid brown; */
+    position: relative;
 }
 
 
@@ -93,14 +97,41 @@ li{
     /* border: 2px solid blue; */
 }
 
-.section-bike2 .article-bike1 h2{
+/* .section-bike2 .article-bike1 h2{
     font-size: 2.25rem;
     color: white;
-}
+} */
 
 .article-bike2 h2{
     font-size: 2.25rem;
     color: white;
+    position: relative;
+    /* text-align: left; */
+}
+
+/* .article-bike2 h2::after{
+    content: "";
+    background-image: url(./img/dec/top-right.svg);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+} */
+
+h2::after{
+    content: "";
+    background-image: url(./img/dec/top-right.svg);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+
 }
 
 .section-bike2 .article-bike1 p{
@@ -118,25 +149,85 @@ li{
     font-size: 1.2rem;
     font-weight: 300;
     background-color: var(--c11);
-    position: relative;
-    /* left: 598px;
-    top: 420px; */
+    position: absolute;
     display: inline-block;
     color: white;
     border-radius: 4px;
     padding: 2px 12px;
+    left: -164px;
+    top: 10px;
 }
 
 .article-bike2 h2::before{
-    content: "R$ 4999";
+    content: "R$ 2999";
     font-size: 1.2rem;
     font-weight: 300;
     background-color: var(--c11);
-    position: relative;
+    position: absolute;
     /* left: 600px;
     top: 900px; */
     display: inline-block;
     color: white;
     border-radius: 4px;
     padding: 2px 12px;
+    left: -150px;
+    top: 10px;
+}
+
+.article-bike3 h2::before{
+    content: "R$ 3999";
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: var(--c11);
+    position: absolute;
+    /* left: 600px;
+    top: 900px; */
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 12px;
+    left: -163px;
+    top: 10px;
+}
+
+#eletrica{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.eletrica{
+    display: flex;
+    gap: 10px;
+}
+
+.eletrica::before{
+    content: url(./img/icones/eletrica.svg);
+}
+
+.carbono{
+    display: flex;
+    gap: 10px;
+}
+
+.carbono::before{
+    content: url(./img/icones/carbono.svg);
+}
+
+.velocidade{
+    display: flex;
+    gap: 10px;
+}
+
+.velocidade::before{
+    content: url(./img/icones/velocidade.svg);
+}
+
+.rastreador{
+    display: flex;
+    gap: 10px;
+}
+
+.rastreador::before{
+    content: url(./img/icones/rastreador.svg);
 }
