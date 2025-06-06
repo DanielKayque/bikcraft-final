@@ -1,0 +1,149 @@
+article{
+    width: 100%;
+    height: 230px;
+    background-color: var(--c11);
+}
+
+.text-nav{
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 378px){
+    .text-nav h1{
+        font-size: 3rem;
+    }
+}
+
+.main-principal{
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.bicicletas{
+    max-width: 1200px;
+    border: 2px solid brown;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+}
+
+.content-bicicletas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.preco-bike{
+    position: absolute;
+    top: 5px;
+    left: 446px;
+    background-color: black;
+    padding: 0 15px;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.content-bicicletas img{
+    max-width: 540px;
+    max-height: 320px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.h2-name-bikes{
+    font-size: 2rem;
+    position: relative;
+}
+
+/* .h2-name-bikes::before{
+    content: "R$ 2499";
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    font-weight: 100;
+    font-size: 1.2rem;
+    align-items: center;
+    position: absolute;
+    padding: 0 15px;
+    left: -165px;
+    top: 4px;
+} */
+
+.description{
+    font-size: 1rem;
+}
+
+.especifications-bikes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botao-container{
+    border: 2px solid black; 
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.especifications-bikes img{
+    width: 30px;
+    height: 30px;
+}
+
+.eletrica{
+    display: flex;
+    gap: 10px;
+}
+
+.eletrica::before{
+    content: url(./img/icones/eletrica.svg);
+}
+
+.carbono{
+    display: flex;
+    gap: 10px;
+}
+
+.carbono::before{
+    content: url(./img/icones/carbono.svg);
+}
+
+.velocidade{
+    display: flex;
+    gap: 10px;
+}
+
+.velocidade::before{
+    content: url(./img/icones/velocidade.svg);
+}
+
+.rastreador{
+    display: flex;
+    gap: 10px;
+
+}
+
+.rastreador::before{
+    content: url(./img/icones/rastreador.svg);
+}
+
+@media (max-width: 1200px){
+    .textos-bike1 p{
+
+    }
+}
+
+
