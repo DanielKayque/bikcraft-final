@@ -133,10 +133,13 @@
 }
     .seguros-ouro .preco p, span{
         margin-right: -20px;
+        font-size: 0.9rem;
     }
 
     .seguros-prata .preco p, span{
         margin-right: -20px;
+        font-size: 0.9rem;
+
     }
 }
 

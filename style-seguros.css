@@ -19,21 +19,33 @@
     width: 100%;
     background-color: black;
     height: 748px;
+    /* border: 2px solid blue; */
 }
 
 .content-vantagens{
     max-width: 1200px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
+}
+
+.container-vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* border: 4px solid yellow; */
+    position: relative;
 }
 
 .grid-vantagens{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     gap: 40px;
     margin-top: 40px;
 }
@@ -60,4 +72,45 @@
 
 .rapidez::before{
     content: url(./img/icones/rastreador.svg);
+}
+
+.container-vantagens::after{
+    content: url(./img/dec/bottom-right.svg);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.container-vantagens::before{
+    content: url(./img/dec/bottom-left.svg);
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+@media (max-width: 800px){
+    .grid-vantagens{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-vantagens::before,
+    .container-vantagens::after{
+        display: none;
+    }
+}
+
+@media (max-width: 651px){
+    .vantagens-seg{
+        height: 100%;
+    }
+}
+
+@media (max-width: 395px){
+    .grid-vantagens{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .h1-branco-no-details{
+        font-size: 3rem;
+    }
 }
