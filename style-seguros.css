@@ -114,3 +114,45 @@
         font-size: 3rem;
     }
 }
+
+.section-perguntas{
+    width: 100%;
+    min-height: 800px;
+    border: 2px solid red;
+}
+
+.container-perguntas{
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.content-perguntas{
+    height: 100%;
+    border: 2px solid green;
+}
+
+.list-perguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.list-perguntas li:nth-child(odd){
+    background-color: var(--c1);
+    border-radius: 4px;
+}
+
+li span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+li p{
+    color: var(--c9);
+}
