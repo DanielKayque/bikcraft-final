@@ -1,0 +1,63 @@
+.h1-branco::after{
+    content: url(./img/dec/top-right.svg);
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+
+.h1-branco{
+    position: relative;
+}
+
+.texto-seguros{
+    font-size: 1rem;
+    color: var(--c6);
+    max-width: 400px;
+}
+
+.vantagens-seg{
+    width: 100%;
+    background-color: black;
+    height: 748px;
+}
+
+.content-vantagens{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-vantagens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid red;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.reparo::before{
+    content: url(./img/icones/eletrica.svg);
+}
+
+.eletrico::before{
+    content: url(./img/icones/carbono.svg);
+}
+
+.sustentavel::before{
+    content: url(./img/icones/sustentavel.svg);
+}
+
+.recuperacao::before{
+    content: url(./img/icones/rastreador.svg);
+}
+
+.seguranca::before{
+    content: url(./img/icones/seguro.svg);
+}
+
+.rapidez::before{
+    content: url(./img/icones/rastreador.svg);
+}
