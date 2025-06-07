@@ -137,4 +137,46 @@ article{
     content: url(./img/icones/rastreador.svg);
 }
 
-@media (max-width: 860px)
+@media (max-width: 868px){
+    .content-bicicletas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 325px;
+        
+    }
+
+    .imagem-container{
+        width: 100%;
+        height: 426px;
+        object-fit: cover;
+        border: 2px solid yellowgreen;
+
+    }
+
+    .imagem-container img{
+        min-width: 100%;
+        min-height: 100%;
+        
+    }
+}
+
+@media (max-width:444px){
+    .content-bicicletas{
+        grid-template-rows: 1fr 350px;
+    }
+}
+
+@media (max-width:353px){
+    .content-bicicletas{
+        grid-template-rows: 1fr 380px ;
+    }
+}
+
+@media (max-width:289px){
+    .content-bicicletas{
+        grid-template-rows: 1fr 1fr ;
+    }
+
+    .btn-style{
+        font-size: 0.825rem;
+    }
+}
