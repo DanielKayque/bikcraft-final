@@ -13,6 +13,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 2px solid blue; */
 }
 
 @media (max-width: 378px){
@@ -24,6 +25,10 @@ article{
 .main-principal{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
     /* border: 2px solid blue; */
 }
 
@@ -40,7 +45,7 @@ article{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
-    
+    /* border: 2px solid blue; */
 }
 
 .preco-bike{
@@ -78,8 +83,23 @@ article{
     position: relative;
 }
 
+.h2-name-bikes::after,
+.h2-name-bikes-branco::after{
+    content: url(./img/dec/top-right.svg);
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+
+.h2-name-bikes-branco{
+    font-size: 2rem;
+    position: relative;
+    color: white;
+}
+
 .description{
     font-size: 1rem;
+    color: var(--c7);
 }
 
 .especifications-bikes{
@@ -87,6 +107,11 @@ article{
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.especifications-bikes p{
+    color: var(--c7);
+    font-weight: 600;
 }
 
 .botao-container{
@@ -137,10 +162,17 @@ article{
     content: url(./img/icones/rastreador.svg);
 }
 
+.main-secundario{
+    background: linear-gradient(to right, #FFF 0% 30%, #111 30% 100%);
+    min-height: 460px;
+    align-items: center;
+    display: flex;
+} 
+
 @media (max-width: 868px){
     .content-bicicletas{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 325px;
+        grid-template-rows: 1fr 290px;
         
     }
 
@@ -157,22 +189,38 @@ article{
         min-height: 100%;
         
     }
+
+    .main-secundario{
+        background-image: none;
+        background-color: #111;
+        height: 100%;
+        display: flex;
+        align-items: end;
+    }
+}
+
+@media (max-width: 620px){
+    .main-secundario .content-bicicletas{
+        grid-template-rows: 1fr 315px;
+    }
 }
 
 @media (max-width:444px){
-    .content-bicicletas{
+    .content-bicicletas, .main-secundario .content-bicicletas{
         grid-template-rows: 1fr 350px;
     }
 }
 
 @media (max-width:353px){
-    .content-bicicletas{
+    .content-bicicletas, 
+    .main-secundario .content-bicicletas{
         grid-template-rows: 1fr 380px ;
     }
 }
 
 @media (max-width:289px){
-    .content-bicicletas{
+    .content-bicicletas,
+    .main-secundario .content-bicicletas{
         grid-template-rows: 1fr 1fr ;
     }
 
