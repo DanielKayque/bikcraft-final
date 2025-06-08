@@ -8,6 +8,7 @@
 @import url(footer.css);
 @import url(./style-pag-bike.css);
 @import url(./style-seguros.css);
+@import url(./style-contato.css);
 
 *{
     margin: 0;
