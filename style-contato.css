@@ -158,3 +158,47 @@ i{
         min-width: 100px;
     }
 }
+
+@media (max-width:390px){
+    .content-form label{
+        font-size: 1rem;
+    }
+    .content-form{
+        min-width: 100px;
+    }
+
+    .grid-formulario-local{
+        min-width: 200px;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .content-localizacao p{
+        font-size: 0.825rem;
+    }
+
+    .content-localizacao{
+        min-width: 100px;
+    }
+
+    .redes-sociais{
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .content-form button::after{
+        display: none;
+    }
+}
+
+@media(max-width: 315px){
+    .contacts-email, .contacts-email::before{
+        display: none;
+    }
+
+    .content-localizacao::after{
+        display: none;
+    }
+}
