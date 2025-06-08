@@ -118,7 +118,9 @@
 .section-perguntas{
     width: 100%;
     min-height: 800px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
 }
 
 .container-perguntas{
@@ -126,14 +128,14 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
 }
 
 .content-perguntas{
     height: 100%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .list-perguntas{
@@ -155,4 +157,25 @@ li span{
 
 li p{
     color: var(--c9);
+}
+
+.question-list{
+    position: relative;
+    margin-left: 14px;
+}
+
+li .question-list::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--p1);
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+
+@media (max-width: 380px){
+    .h1-preto{
+        font-size: 3rem;
+    }
 }
