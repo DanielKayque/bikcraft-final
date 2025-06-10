@@ -9,6 +9,7 @@
 @import url(./style-pag-bike.css);
 @import url(./style-seguros.css);
 @import url(./style-contato.css);
+@import url(./style-condicoes.css);
 
 *{
     margin: 0;
