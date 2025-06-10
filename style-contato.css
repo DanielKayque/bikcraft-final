@@ -208,7 +208,7 @@ i{
 .section-lojas{
     width: 100%;
     height: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     background-color: var(--c2);
 }
 
@@ -221,7 +221,7 @@ i{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px 20px;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .grid-container h1{
@@ -243,7 +243,7 @@ i{
 
 .lojas-item,
 .lojas-item2{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     max-width: 100%;
     height: 100%;
 }
@@ -256,7 +256,8 @@ i{
     background-color: white;
     width: 100%;
     height: auto;
-    border: 2px solid red;
+    margin-bottom: 120px;
+    /* border: 2px solid red; */
 }
 
 .dados-lojas{
@@ -317,6 +318,10 @@ i{
     .lojas-conteudo h2{
     grid-column: auto;
 }
+    .lojas-conteudo{
+    margin-bottom: 50px;
+    }
+
 }
 
 @media (max-width: 708px){
@@ -335,6 +340,8 @@ i{
     }
     .lojas-item img,
     .lojas-item2 img{
-        width: 1000px;
+        min-width: 100%;
+        object-fit: cover;
+        height: auto;
     }
 }
