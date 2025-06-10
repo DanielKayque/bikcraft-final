@@ -10,6 +10,7 @@
 @import url(./style-seguros.css);
 @import url(./style-contato.css);
 @import url(./style-condicoes.css);
+@import url(./style-orcamento.css);
 
 *{
     margin: 0;

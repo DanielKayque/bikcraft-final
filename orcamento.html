@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikcraft | Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-bg">
+        <div class="header">
+            <h1><a href="./">bikcraft</a></h1>
+
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="./bicicleta.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <div class="text-nav">
+            <p class="texto-alternativo-cinza">COTAÇÕES NO SEU EMAIL</p>
+            <h1 class="h1-branco">solicite um orçamento<span>.</span></h1>
+        </div>
+    </article>
+
+    <main class="main-orcamento">
+        <div class="container-orcamento">
+            <!-- <form action="./" class="form-radio"></form>
+            <div class="radio-container"></div> -->
+            
+            <form action="./" class="form-orcamento">
+                <p class="texto-alternativo-cinza-small">DADOS PESSOAIS</p>
+                <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+                
+
+                <div  class="col-2">
+                <label for="cpf">CPF</label>
+                <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00"></div>
+
+            <div class="col-2">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                </div>
+
+                <p class="texto-alternativo-cinza-small">ENTREGA</p>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep">
+                </div>
+
+                <div>
+                    <label for="Numero">Numero</label>
+                    <input type="number" name="Numero" id="Numero">
+                </div>
+
+                <div>
+                    <label for="Logradouro">Logradouro</label>
+                    <input type="text" name="Logradouro" id="Logradouro" placeholder="Rua, Avenida...">
+                </div>
+
+                <div>
+                    <label for="Bairro">Bairro</label>
+                    <input type="text" name="Bairro" id="Bairro">
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="aceito-termos" id="aceito-termos" required>
+                    Li e aceito os <a href="./condicoes.html">termos e condições</a>
+                </div>
+
+                <div class="btn">
+                    <a href="./" class="btn-style">SOLICITAR ORÇAMENTO</a>
+                </div>
+            
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
