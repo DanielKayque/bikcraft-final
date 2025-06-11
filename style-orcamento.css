@@ -1,21 +1,12 @@
-.form-radio{
-    width: 100%;
-    height: 100%;
-    border: 2px solid greenyellow;
-}
-
-.radio-container{
-}
-
 .main-orcamento{
     width: 100%;
     height: 100%;
-    border: 2px solid blue;
-    background-color: var(--c2);
+    /* border: 2px solid blue; */
+    background: linear-gradient(to bottom, var(--c11) 0%, var(--c11) 60%, white 60%, white 100%);
 }
 
 .container-orcamento{
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 1200px;
@@ -36,6 +27,7 @@
 .form-orcamento p{
     grid-column: span 2;
 }
+
 
 .form-orcamento a{
     color: black;
@@ -105,16 +97,21 @@ label{
 
 .form-radio{
     width: 100%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
     align-content: start;
     gap: 20px;
+    background-color: black;
 }
 
 .form-radio p{
     grid-column: span 2;
+}
+
+label[for="seguro"]{
+  grid-column: 2;
 }
 
 .form-radio label{
@@ -128,6 +125,7 @@ label{
     position: relative;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .form-radio label::before{
@@ -153,7 +151,7 @@ label{
 }
 
 .form-radio input:checked + label{
-    background-color: white;
+    background-color: var(--c2);
     color: var(--c11);
     border: 1px solid var(--p1);
     box-shadow: 1px 1px 1px 0px var(--p2);
