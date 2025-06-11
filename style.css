@@ -66,6 +66,10 @@ ul li::after {
   transition: transform 0.3s ease;
 }
 
+.h1-branco:nth-of-type(1)::after{
+    display: none;
+}
+
 ul li:hover::after {
   transform: scaleX(1);
   width: 100%; /* cresce até ocupar todo o elemento */
