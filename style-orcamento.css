@@ -103,3 +103,82 @@ label{
 
 /* Estilização do formulario lado esquerdo */
 
+.form-radio{
+    width: 100%;
+    border: 2px solid yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    align-content: start;
+    gap: 20px;
+}
+
+.form-radio p{
+    grid-column: span 2;
+}
+
+.form-radio label{
+    background-color: var(--c10);
+    color: var(--c4);
+    border: 1px solid var(--p1) transparent;
+    padding: 12px 28px;
+    border-radius: 4px;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-radio label::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 8px;
+}
+
+
+.bikcraft-checked + div{
+    width: 100%;
+    grid-column: span 2;
+}
+
+.form-radio input{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-radio input:checked + label{
+    background-color: white;
+    color: var(--c11);
+    border: 1px solid var(--p1);
+    box-shadow: 1px 1px 1px 0px var(--p2);
+}
+
+.form-radio input:checked + label::before{
+    box-shadow: inset 0 0 0 3px white, inset 0 0 0 6px black;
+}
+
+.bikes-lista{
+    display: none;
+}
+
+.planos{
+    display: none;
+}
+
+#bikcraft:checked ~ .bikes-lista{
+    display: block;
+}
+
+#bikcraft:checked ~ .planos{
+    display: none;
+}
+
+#seguro:checked ~ .planos{
+    display: block;
+}
