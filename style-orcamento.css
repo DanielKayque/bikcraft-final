@@ -3,10 +3,10 @@
     height: 100%;
     /* border: 2px solid blue; */
     background: linear-gradient(to bottom, var(--c11) 0%, var(--c11) 60%, white 60%, white 100%);
+    margin-bottom: 120px;
 }
 
 .container-orcamento{
-    /* border: 2px solid brown; */
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 1200px;
@@ -22,6 +22,8 @@
     padding: 30px;
     background-color: white;
     border-radius: 0 4px 4px 0;
+    box-shadow: 0px 0px 1px 1px var(--c2);
+
 }
 
 .form-orcamento p{
@@ -110,10 +112,6 @@ label{
     grid-column: span 2;
 }
 
-label[for="seguro"]{
-  grid-column: 2;
-}
-
 .form-radio label{
     background-color: var(--c10);
     color: var(--c4);
@@ -163,10 +161,12 @@ label[for="seguro"]{
 
 .bikes-lista{
     display: none;
+    margin-top: 30px;
 }
 
 .planos{
     display: none;
+    margin-top: 30px;
 }
 
 #bikcraft:checked ~ .bikes-lista{
@@ -180,3 +180,89 @@ label[for="seguro"]{
 #seguro:checked ~ .planos{
     display: block;
 }
+
+#magic + label span,
+#nimbus + label span,
+#nebula + label span{
+    display: none;
+}
+
+#magic:checked + label span,
+#nimbus:checked + label span,
+#nebula:checked + label span{
+    display: block;
+}
+
+#prata + label span,
+#ouro + label span{
+    display: none;
+}
+
+#prata + label span,
+#ouro + label span{
+    display: none;
+}
+
+#prata:checked + label span,
+#ouro:checked + label span{
+    display: block;
+}
+
+.planos label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bikes-lista label{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* @media (max-width: 674px){
+    .planos label{
+    display: flex;
+    flex-direction: column;
+}
+
+.bikes-lista label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.planos label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+@media (max-width: 480px){
+.container-orcamento{
+    grid-template-columns: 1fr;
+}
+} */
+
+@media (max-width: 590px){
+.container-orcamento{
+    grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 500px){
+.main-orcamento{
+    margin-bottom: 40px;
+}
+
+}
+
+footer{
+    padding: 40px;
+}
+
+@media(max-width: 318px){
+    footer{
+    padding: 10px;
+}
+}
+
